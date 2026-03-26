@@ -231,8 +231,8 @@
 // console.log(arr.sort());
 
 
-let arr = [15,10,25,20,35,30,45,40,55,50,65,60];
-console.log(arr.slice(10,12));
+// let arr = [15,10,25,20,35,30,45,40,55,50,65,60];
+// console.log(arr.slice(10,12));
 // console.log(arr.slice(1,4));
 // console.log(arr.sort());
 // console.log(arr.indexOf(45));
