@@ -16,3 +16,5 @@
     --height-c-10: 10vh;
     --size-100: 100%; */
 }
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@custom-variant dark (&:where(.dark, .dark *));

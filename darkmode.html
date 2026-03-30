@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" id="root" class="">
+
+<head>
+    <title>Dark mode</title>
+    <link rel="stylesheet" href="output.css">
+    <script>
+        function changemod(){
+            const el=document.getElementById('root');
+            if(el.className=='dark'){
+               document.getElementById('toggle-mode').innerText='Enable Dark Mode';
+                el.className='light';
+            }
+            else{
+               document.getElementById('toggle-mode').innerText='Enable Light Mode';
+                el.className='dark';
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="bg-green-400 dark:bg-slate-800 dark:text-white">Dark Mode in Tailwind CSS</h1>
+    <div class="dark:bg-slate-800 dark:text-white">
+        <h1 class="text-7xl">Dark Mode Content</h1>
+        <p class="text-4xl">This is some content that will be
+            affected by the dark mode styles.</p>
+    </div>
+    <div class="dark:bg-slate-800 flex flex-col items-center gap-4
+     border-be-slate-700 border m-2 p-2 dark:text-white">
+        <div class="bg-blue-400 size-12"></div>
+        <p class="text-2xl">Box with Dark mode</p>
+    </div>
+    <button id="toggle-mode" onclick="changemod()"
+     class="border border-slate-700 m-2 p-2 rounded hover:bg-slate-700 hover:text-white dark:bg-slate-900 dark:text-white">Change Mode</button>
+</body>
+
+</html>
