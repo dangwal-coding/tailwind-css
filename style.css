@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+/* @theme{
+    --breakpoint-sm:700px; //break point for coustomize tailwind
+    --breakpoint-big:1300px; //break point self define (extended from tailwind)
+} */
