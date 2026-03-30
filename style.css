@@ -1,5 +1,18 @@
 @import 'tailwindcss';
-/* @theme{
-    --breakpoint-sm:700px; //break point for coustomize tailwind
-    --breakpoint-big:1300px; //break point self define (extended from tailwind)
-} */
+
+@theme {
+    /* --breakpoint-sm: 700px; */
+    /*break point for coustomize tailwind */
+    /* --breakpoint-big: 1300px; */
+    /*break point self define (extended from tailwind) */
+    /* --padding-10: 200px; */
+    /* --padding-c-10: 20px; */
+    /* --padding-wrapper: 10px;
+    --margin-20: 20px;
+    --margin-c-10: 10px;
+    --height-1:100px;
+    --width-1:100px;
+    --height-100:100%;
+    --height-c-10: 10vh;
+    --size-100: 100%; */
+}

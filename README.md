@@ -46,7 +46,7 @@ If you're using Tailwind's CLI/build pipeline and want to rebuild `output.css` l
 npm install
 
 # build and watch (example CLI command — adapt to your setup)
-npx tailwindcss -i ./src/input.css -o ./output.css --watch
+npx @tailwindcss/cli -i style.css -o output.css --watch
 ```
 
 Note: `output.css` is already present in this repo for convenience; if you edit Tailwind source files you may need to rebuild to see changes.
