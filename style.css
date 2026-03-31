@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 @import "tailwindcss";
 
-/* 
+ 
 @theme {
     /* --breakpoint-sm: 700px; */
 /*break point for coustomize tailwind */
@@ -8,7 +9,7 @@
 /*break point self define (extended from tailwind) */
 /* --padding-10: 200px; */
 /* --padding-c-10: 20px; */
-/* --padding-wrapper: 10px;
+--padding-wrapper: 10px;
     --margin-20: 20px;
     --margin-c-10: 10px;
     --height-1:100px;
@@ -16,7 +17,10 @@
     --height-100:100%;
     --height-c-10: 10vh;
     --size-100: 100%; 
-}*/
+    --font-moon: "Moon Dance", cursive;
+    --font-robo: "Roboto", sans-serif;
+
+}
 /* @custom-variant dark (&:where(.dark, .dark *)); */
 /* extend base class on tailwind css */
 /* @layer base {
@@ -42,7 +46,7 @@
     }
 }  */
 
-@layer components{
+/* @layer components{
     .btn{
         @apply border border-slate-400 rounded px-5 py-1.5 hover:bg-slate-100 m-1;
     }
@@ -68,4 +72,16 @@
         @apply bg-gray-800 font-bold text-white hover:bg-gray-900 border-gray-800;
     }
 
-}
+} */
+
+/* 
+@layer components{
+    .img-container{
+        @apply hover:scale-110 transition duration-1000 hover:brightness-125 rounded-2xl border-4 border-slate-500 hover:border-2 hover:border-slate-100;
+    }
+} */
+ @layer components{
+    .headline{
+        @apply bg-blue-500 text-center text-2xl text-white mt-1 mb-4;
+    }
+ }
