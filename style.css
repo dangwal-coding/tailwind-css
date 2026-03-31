@@ -1,20 +1,71 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
+/* 
 @theme {
     /* --breakpoint-sm: 700px; */
-    /*break point for coustomize tailwind */
-    /* --breakpoint-big: 1300px; */
-    /*break point self define (extended from tailwind) */
-    /* --padding-10: 200px; */
-    /* --padding-c-10: 20px; */
-    /* --padding-wrapper: 10px;
+/*break point for coustomize tailwind */
+/* --breakpoint-big: 1300px; */
+/*break point self define (extended from tailwind) */
+/* --padding-10: 200px; */
+/* --padding-c-10: 20px; */
+/* --padding-wrapper: 10px;
     --margin-20: 20px;
     --margin-c-10: 10px;
     --height-1:100px;
     --width-1:100px;
     --height-100:100%;
     --height-c-10: 10vh;
-    --size-100: 100%; */
-}
+    --size-100: 100%; 
+}*/
 /* @custom-variant dark (&:where(.dark, .dark *)); */
-@custom-variant dark (&:where(.dark, .dark *));
+/* extend base class on tailwind css */
+/* @layer base {
+    h1{
+        @apply text-3xl font-bold text-center text-gray-800;
+    }
+    button{
+        @apply bg-blue-500 text-white px-4 py-2 m-2  rounded;
+    }
+} */
+/* @layer components {
+    .btn {
+        @apply bg-blue-500 text-white px-4 py-2 m-2 rounded;
+    }
+
+   
+}
+
+@layer utilities {
+    /* generate hover: variant for the custom component */
+    /* .gu:hover {
+        @apply bg-blue-600;
+    }
+}  */
+
+@layer components{
+    .btn{
+        @apply border border-slate-400 rounded px-5 py-1.5 hover:bg-slate-100 m-1;
+    }
+    .btn-primary{
+        @apply bg-blue-500 font-bold text-white hover:bg-blue-600 border-blue-500;
+    }
+    .btn-secondary{
+        @apply bg-gray-500 font-bold text-white hover:bg-gray-600 border-gray-500;
+    }
+    .btn-success{
+        @apply bg-green-500 font-bold text-white hover:bg-green-600 border-green-500;
+    }
+    .btn-danger{
+        @apply bg-red-500 font-bold text-white hover:bg-red-600 border-red-500;
+    }
+    .btn-warning{
+        @apply bg-yellow-500 font-bold hover:bg-yellow-600 border-yellow-500;
+    }
+    .btn-info{
+        @apply bg-cyan-500 font-bold hover:bg-cyan-600 border-cyan-500;
+    }
+    .btn-dark{
+        @apply bg-gray-800 font-bold text-white hover:bg-gray-900 border-gray-800;
+    }
+
+}
