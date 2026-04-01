@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dialog Box with Tailwind CSS</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <h1 class="headline">Dialog Box with Tailwind CSS</h1>
+    <div class="fixed inset-0 bg-gray-500">
+        <div class="flex h-full justify-center items-center">
+            <div class="bg-white w-lg text-left shawdow-xl rounded-md relative">
+                <div class="p-5">
+                    <div class="flex items-start">
+                        <img src="disc.png" class="w-8" alt="disclaimer">
+                        <div class="ml-4">
+                            <h3 class="text-gray-900 font-semibold">Deactive Account</h3>
+                            <div class="m-2">
+                                <p class="text-sm text-gray-700">Are you sure you want to deactivate your account? You
+                                    can
+                                    reactivate anytime by logging in again.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-200  px-4 py-3 flex flex-row-reverse rounded-md">
+                    <button onclick="alert('Account Deleted')"
+                        class="bg-red-600 font-semibold text-white ml-3 rounded-sm px-3 py-2 hover:bg-red-500 cursor-pointer">Deactivate</button>
+                    <button
+                        class="bg-white font-semibold shadow-sm ring-1 ring-inset ring-gray-300 ml-3 rounded-md px-3 py-2 cursor-pointer hover:bg-gray-300">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
