@@ -22,6 +22,12 @@
 
 }
 /* @custom-variant dark (&:where(.dark, .dark *)); */
+@layer components{
+    .dark{
+        background-color: #1f1f1f;
+    }
+}
+/* @custom-variant dark (&:where(.dark, .dark *)); */
 /* extend base class on tailwind css */
 /* @layer base {
     h1{
