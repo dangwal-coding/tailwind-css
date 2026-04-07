@@ -6,24 +6,22 @@
     <link rel="stylesheet" href="output.css" />
   </head>
 
-  <body class="dark:dark dark:text-white overflow-x-hidden">
-    <header class="flex justify-between text-[14px]">
-      <div class="flex p-6 text-center justify-start">
-        <div class="flex space-x-4">
-          <a href="" class="hover:underline">About</a>
-          <a href="" class="hover:underline">Store</a>
+  <body class="dark:dark dark:text-white overflow-x-hidden flex flex-col min-h-screen">
+    <header class="flex justify-between items-center text-xs sm:text-sm md:text-base px-4 sm:px-6 py-3 sm:py-4">
+      <div class="flex justify-start">
+        <div class="flex space-x-3 sm:space-x-4">
+          <a href="" class="hover:underline text-gray-300 hover:text-gray-100">About</a>
+          <a href="" class="hover:underline text-gray-300 hover:text-gray-100">Store</a>
         </div>
       </div>
-      <div class="flex p-6 text-center justify-start">
-        <div class="flex space-x-4">
+      <div class="flex justify-start items-center">
+        <div class="flex space-x-3 sm:space-x-4 items-center">
           <a href="" class="hover:underline">Gmail</a>
           <a href="" class="hover:underline">Images</a>
           <svg
-            class="gb_E"
+            class="gb_E w-5 h-5 sm:w-6 sm:h-6"
             focusable="false"
-            height="24px"
             viewBox="0 -960 960 960"
-            width="24px"
             fill="white"
           >
             <path
@@ -31,10 +29,9 @@
             ></path>
           </svg>
           <svg
-            class="gb_F"
+            class="gb_F w-5 h-5 sm:w-6 sm:h-6"
             focusable="false"
             viewBox="0 0 24 24"
-            height="24"
             fill="white"
           >
             <path
@@ -50,9 +47,8 @@
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="24px"
+            class="w-5 h-5 sm:w-6 sm:h-6"
             viewBox="0 -960 960 960"
-            width="24px"
             fill="#e3e3e3"
           >
             <path
@@ -63,15 +59,13 @@
       </div>
     </header>
     <!-- Main content are start here -->
-    <main class="flex items-center justify-center flex-col pt-20">
-      <div class="h-24 mb-8">
+    <main class="flex items-center justify-center flex-col  flex-grow pt-8 sm:pt-12 md:pt-20">
+      <div class="h-16 sm:h-20 md:h-24 mb-6 sm:mb-8">
         <svg
-          class="lnXdpd"
+          class="lnXdpd w-40 sm:w-56 md:w-72"
           aria-label="Google"
-          height="92"
           role="img"
           viewBox="0 0 272 92"
-          width="272"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -81,11 +75,90 @@
         </svg>
       </div>
       <!-- search bar start here -->
-      <div class="w-full max-w-2xl">
+      <div class="w-full max-w-xl sm:max-w-2xl px-4 sm:px-0">
         <div class="relative">
-          <input type="text" class="w-full border bg-[#4d5156] rounded-full py-3 px-5" placeholder="Search">
+          <!-- search icon -->
+          <input
+            type="text"
+            placeholder="Search Google or type a URL"
+            class="w-full border border-gray-600 bg-[#4d5156] rounded-full py-2 sm:py-3 px-14 sm:px-16 text-white text-sm hover:bg-[#555558] focus:outline-none focus:bg-[#555558] transition"
+          />
+          <svg
+            class="left-4 top-2.5 sm:top-3 w-5 h-5 sm:w-6 sm:h-6 absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+            />
+          </svg>
+          <!-- mic icon -->
+          <svg
+            class="absolute right-12 sm:right-16 top-2.5 sm:top-3 w-5 h-5 sm:w-6 sm:h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M395-435q-35-35-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35q-50 0-85-35Zm85-205Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm68.5-371.5Q520-503 520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480q17 0 28.5-11.5Z"
+            />
+          </svg>
+          <!-- search by image -->
+          <svg
+            class="absolute right-4 top-2.5 sm:top-3 w-5 h-5 sm:w-6 sm:h-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              fill="#e3e3e3"
+              d="M480-320q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm240 160q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160Zm-440 40q-66 0-113-47t-47-113v-80h80v80q0 33 23.5 56.5T280-200h200v80H280Zm480-320v-160q0-33-23.5-56.5T680-680H280q-33 0-56.5 23.5T200-600v120h-80v-120q0-66 47-113t113-47h80l40-80h160l40 80h80q66 0 113 47t47 113v160h-80Z"
+            ></path>
+          </svg>
         </div>
       </div>
+      <!-- search bar button  -->
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-5 mt-6 sm:mt-8 justify-center">
+        <button
+          class="border border-gray-700 px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg bg-[#303134] hover:bg-[#3c3f42] text-white text-sm hover:border-gray-500 transition"
+        >
+          Google Search
+        </button>
+        <button
+          class="border border-gray-700 px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg bg-[#303134] hover:bg-[#3c3f42] text-white text-sm hover:border-gray-500 transition"
+        >
+          I'm Feeling Lucky
+        </button>
+      </div>
+      <!-- Transaltion bar -->
+      <div class="mt-6 sm:mt-8 text-center">
+        <p>
+          <span class="text-xs sm:text-sm text-[#BFBFBF]">Google offered in: </span
+          ><a class="text-xs sm:text-sm text-[#99C3FF] hover:underline" href="#"
+            >हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മલയാളം ਪੰਜਾਬੀ</a
+          >
+        </p>
+      </div>
+      <!-- footer bar -->
+      <footer class="w-full mt-auto border-t border-gray-700">
+        <div class="bg-[#121213] text-white px-4 sm:px-6 py-3 text-xs sm:text-sm mb-1">
+          <p class="text-[#BFBFBF]">India</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 bg-[#121213] text-white px-4 sm:px-6 py-3 text-xs sm:text-sm">
+          <div class="flex flex-wrap gap-3 sm:gap-6 mb-3">
+            <a href="#" class="text-[#BFBFBF] hover:text-white transition">Advertising</a>
+            <a href="#" class="text-[#BFBFBF] hover:text-white transition">Business</a>
+            <a href="#" class="text-[#BFBFBF] hover:text-white transition">How Search works</a>
+          </div>
+          <div class="flex flex-wrap gap-3 sm:gap-6">
+            <a href="#" class="text-[#BFBFBF] hover:text-white transition">Privacy</a>
+            <a href="#" class="text-[#BFBFBF] hover:text-white transition">Terms</a>
+            <a href="#" class="text-[#BFBFBF] hover:text-white transition">Settings</a>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
